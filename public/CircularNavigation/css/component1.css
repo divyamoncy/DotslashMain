@@ -15,7 +15,7 @@ body {
 }
 
 body {
-  background: #f06060;
+  background: #303030;
   color: #fff;
 }
 
@@ -74,7 +74,7 @@ body {
 .cn-button {
   border: none;
   background: none;
-  color: #f06060;
+  color: #303030;
   text-align: center;
   font-size: 1.8em;
   padding-bottom: 1em;
