@@ -10,22 +10,67 @@
 		<meta name="author" content="Sara Soueidan for Codrops" />
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component1.css" />
 		<script src="js/modernizr-2.6.2.min.js"></script>
-
+		<style type="text/css">
+			body{
+				 font-family: 'Roboto Mono', monospace;  
+			}
+		</style>
 
 	</head>
 	<body>
-		
+
+
 		<div class="container">
+			<nav class="navbar navbar-default navbar-fixed-top" style="background-color: #303030">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1"
+					data-toggle="collapse" id="collapser" type="button"><span></span> <span></span> <span></span> <span></span>
+					<span></span> <span></span></button> <a class="navbar-brand" href="#" rel="home"><img style="height: 60px;margin-left:200px;	 " alt="Logo Image" id=
+					"logoXCET" src="logo_sub.png"></a>
+				</div><!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="menu collapse navbar-collapse" id="bs-example-navbar-collapse-1" style=
+				"border-color: black; max-height: unset; height: 1px;">
+					<ul class="nav navbar-nav navbar-right">
+						<!-- <li>
+							<a class="at" href="#location">Venue</a>
+						</li>
+						<li>
+							<a class="at" href="#speakers">Speakers</a>
+						</li>
+						<li>
+							<a class="at" href="#schedule">Schedule</a>
+						</li>
+						<li>
+							<a class="at" href="sponsors.html">Sponsor</a>
+						</li>
+						<li>
+							<a class="at" href="team.html">Team</a>
+						</li> -->
+						<li>
+							<a class="at" data-target="#regmodal" data-toggle="modal" href="#" id="Regspn"><span id="regSpan" style=
+							"color: white;">navbar /></span></a>
+						</li>
+					</ul>
+				</div> 
+			</div>
+		</nav>
+        
 			<!-- Top Navigation -->
 			<div class="codrops-top clearfix">
 				<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/CreativeLinkEffects/"><span>Previous Demo</span></a>
 				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=16114"><span>Back to the Codrops Article</span></a></span>
 			</div>
 			<header>
-				<h1>Circular Navigation <span>Building a Circular Navigation with CSS Transforms</span></h1>	
+				<div style="margin-top: 300px;margin-bottom: 300px;">
+				<h1>< Disruptive Tech /><span>#beTheBreakThrough</span></h1>	
+				<h1></br>24, 25 Feb 2018 </br><span style="color:red;">!important</span> </h1>
+			</div>
 				<nav class="codrops-demos">
 					<a class="current-demo" href="index.html">Demo 1</a>
 					<a href="index2.html">Demo 2</a>
