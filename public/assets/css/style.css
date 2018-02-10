@@ -20,6 +20,9 @@ overflow-y:hidden;
 }
 #container {
   width: 100%;
+  margin-left:auto;
+  margin-right: auto;
+  
 }
 
 #card-container {
@@ -29,19 +32,19 @@ overflow-y:hidden;
 .col-wrapper {
   display: inline-block;
   margin: 0 -5px 0 0;
-  width: 49%;
+  width: 100%;
   vertical-align: top;
 }
 
 .col {
   display: inline-block;
   margin: 0 -5px -5px 0;
-  width: 50%;
+  width: 33.333%;
   vertical-align: top;
 }
 
 .item {
-  width: calc(100% - 25px);
+  width: calc(100% - 20px);
  
   margin: 25px auto;
   text-align: left;
@@ -69,7 +72,7 @@ overflow-y:hidden;
   text-align: center;
 }
  .item-desc img{
-    	height:300px;
+    	height:200px;
     	text-align: center;
     	margin: auto;
     	
@@ -107,40 +110,53 @@ overflow-y:hidden;
 @media (max-width: 1550px) {
   
   .col-wrapper {
-    width: 40%;
+    width: 33%;
   }
  
   .col-1, .col-2 {
     width: 100%;
     display: block;
   }
+  .item-desc img{
+    	height:300px;
+    }
   
 }
 
-@media (max-width: 985px) {
+@media (max-width:1024px) {
   
   body {
     font-size: 22px;
   }
   
   .col-wrapper {
-    width: 48%;
+    width:75%;
   }
+  .item-desc img{
+    	height:300px;
+    }
   
 }
 
 @media (max-width: 675px) {
   
   .col-wrapper {
-    width: 75%;
+    width: 72%;
   }
+   .item-desc img{
+    	height:250px;
+    }
   
 }
 
 @media (max-width: 525px) {
   
   .col-wrapper {
-    width: 96%;
+    width: 90%;
   }
+   .item-desc img{
+    	height:250px;
+    }
+  
   
 }
