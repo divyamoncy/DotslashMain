@@ -45,7 +45,7 @@ overflow-y:hidden;
  
   margin: 25px auto;
   text-align: left;
-  background-color: #303030;
+  background-color: #232323;
   -webkit-box-shadow:-1px -2px 20px 0px rgb(36, 33, 36);
   -moz-box-shadow: -1px -2px 20px 0px rgb(36, 33, 36);
   box-shadow: -1px -2px 20px 0px rgb(36, 33, 36);
@@ -55,7 +55,6 @@ overflow-y:hidden;
 
 
 .item-desc {
-  background-color: #232323;
   position: relative;
   padding: 25px;
 
