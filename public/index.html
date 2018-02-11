@@ -14,11 +14,21 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-  <script src="js/modernizr.custom.js"></script>
+ <!--  <script src="assets/js/modernizr.custom.js"></script> -->
+
+
+  <link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="assets/css/demo.css" />
+<link rel="stylesheet" type="text/css" href="assets/css/component1.css" />
+<script src="assets/js/modernizr-2.6.2.min.js"></script>
+<style type="text/css">
+      body{
+         font-family: 'Roboto Mono', monospace;  
+      }
+    </style>
 </head>
 <body>
-<<<<<<< HEAD
-  <div class="md-modal md-effect-1" id="modal-1">
+ <!--  <div class="md-modal md-effect-1" id="modal-1">
       <div class="md-content">
         <h3>Modal Dialog</h3>
         <div>
@@ -31,12 +41,37 @@
           <button class="md-close">Close me!</button>
         </div>
       </div>
-    </div>
+    </div>  MODAL REMOVED -->
 
 	<div id="container">
-=======
 <div id="container">
->>>>>>> 1f655d793190bbc63d49d71f85197530489909f7
+  <header>
+        <div style="margin-top: 300px;margin-bottom: 300px;">
+        <h1>< Disruptive Tech /><span>#beTheBreakThrough</span></h1>  
+        <h1></br>24, 25 Feb 2018 </br><span style="color:red;">!important</span> </h1>
+      </div>
+        
+
+
+      </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#232323;border:unset;">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header" style="padding: 10px;margin-left: 5vw;">
+        <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" id="collapser" type="button"><span></span> <span></span> <span></span> <span></span> <span></span> <span></span></button> <a class="navbar-brand" href="#" rel="home" style="padding: unset;"><img alt="Logo Image" src="logo.png" style="display:block;height: 45px;padding-top: 5px;"></a>
+      </div><!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="menu collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="border-color: black; max-height: unset; height: 1px;">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a class="at" data-target="#regmodal" data-toggle="modal" href="#" id="Regspn" style="margin-top: 8px;"><span id="regSpan" style="color: white;font-size:18px;">navbar /&gt;</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
 
   <div id="card-container">
     
@@ -150,15 +185,30 @@
        
 
   </div>
-<<<<<<< HEAD
 </div>
-  <div class="md-overlay"></div>
+<!--   <div class="md-overlay"></div>
   <script src="assets/js/classie.js"></script>
     <script src="assets/js/modalEffects.js"></script>
+modal code -->
+<div class="component">
+        <!-- Start Nav Structure -->
+        <button class="cn-button" id="cn-button">+</button>
+        <div class="cn-wrapper" id="cn-wrapper">
+            <ul>
+              <li><a href="#"><span class="icon-picture"></span></a></li>
+              <li><a href="#"><span class="icon-headphones"></span></a></li>
+              <li><a href="#"><span class="icon-home"></span></a></li>
+              <li><a href="#"><span class="icon-facetime-video"></span></a></li>
+              <li><a href="#"><span class="icon-envelope-alt"></span></a></li>
+             </ul>
+        </div>
+        <div id="cn-overlay" class="cn-overlay"></div>
+        <!-- End Nav Structure -->
+      </div>
 
-=======
-</div></div>
->>>>>>> 1f655d793190bbc63d49d71f85197530489909f7
+</div>
+<script src="assets/js/polyfills.js"></script>
+    <script src="assets/js/demo1.js"></script>
 	
 </body>
 </html>
