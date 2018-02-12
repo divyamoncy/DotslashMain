@@ -1,0 +1,105 @@
+@media (max-width: 1300px) {
+	
+	}
+
+
+
+@media (max-width: 1250px){
+
+
+}
+
+@media screen and (max-width: 772px){
+/*.bitcoin{
+   transform: translate3d(60vw, 10vh, 0px);
+  }*/
+
+}
+
+
+
+
+
+@media screen and (max-width: 480px) {
+	.bitcoin{
+    transform: translate3d(60vw, 20vh, 0px);
+    width: 20vw;
+  }
+
+  .twitter{
+    transform:scale(2,2) translate3d(2vw, 30vh, 0px);
+  }
+
+  .ar{
+    transform:translate3d(32vw, 31vh, 0px);
+  }
+
+  #btnGo{
+    top: 58%;
+    left: 38%;
+  }
+
+  .printer{
+    transform:translate3d(65vw, 70vh, 0px);
+  }
+
+  .vr{    transform: translate3d(15vw, 75vh, 0px);
+  }
+
+
+  #title{
+    font-size: 14px;
+    top:62%;
+  }
+
+  #sbText{
+    font-size: 5.5vw;
+    left: 34%;
+    top: 50%;
+  }
+
+
+@keyframes slashTrans {
+      0% {
+        transform: rotate(0deg);
+        transform: scale(2.5, 5.1);
+        fill: white;
+        stroke: black;
+      }
+      25% {
+        transform: rotate(-30deg);
+        transform: scale(3.1, 3.1);
+        /*stroke-width:3px;
+          /*fill:#303030;*/
+        fill: white;
+      }
+      50% {
+        transform: rotate(-40deg);
+        fill: white;
+      }
+      100% {
+        transform: rotate(-50deg);
+        height: 1vw;
+        fill: #303030;
+        stroke: #303030;
+        width: 13%;
+      }
+      75% {
+        stroke-width: 0.03vh;
+      }
+      100% {
+        transform: rotate(-55deg);
+    height: 1.8vw;
+    fill: #303030;
+    stroke-width: 0.59vh;
+    width: 23%;
+      }
+    }
+  .slashAnim {
+      x: 40%;
+      y: 50%;
+      animation: slashTrans 4s 1;
+      transform-origin: 50% 51%;
+      animation-fill-mode: forwards;
+    }
+}

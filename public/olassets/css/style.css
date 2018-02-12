@@ -1,0 +1,172 @@
+
+         
+	.mixedreality{
+		margin-left: 30%;
+		margin-top:3%;
+		width:50px;
+		transform-origin:50% 100%;
+    -moz-transform-origin:50% 100%;
+    animation: appear 1s 1;
+    animation-timing-function: cubic-bezier(.63,.09,.3,1.43);
+    animation-fill-mode:forwards;
+    transform:scale(0);
+    animation-delay: 6s;
+	
+		
+	}
+	.mixedreality :hover{
+		opacity:1;
+	}
+	.aug{
+		width:50px;
+		transform-origin:50% 100%;
+    -moz-transform-origin:50% 100%;
+    animation: appear 1s 1;
+    animation-timing-function: cubic-bezier(.63,.09,.3,1.43);
+    animation-fill-mode:forwards;
+    transform:scale(0);
+    animation-delay: 7s;
+	}
+
+.transition{
+    transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s 
+
+}
+
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+html{
+  min-height: 100%;
+  overflow: hidden;
+}
+body{
+  height: calc(100vh - 8em);
+  padding: 4em;
+  
+  font-family: 'Anonymous Pro', monospace;  
+  font-size: 12px;
+  
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(20) 1s 1 normal both,
+             blinkTextCursor 500ms steps(20) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 12em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: grey;}
+  to{border-right-color: transparent;}
+}
+	
+
+
+	.searchbar{
+    border: none;
+    padding: 10px;
+    margin: 200px;
+    height: 30px;
+    width: 300px;
+    border:1px solid #eaeaea;
+    outline:none;
+    text-align: center;
+    align-content: center;
+}
+.searchbar:hover{
+    border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9;
+}
+.searchbar:focus{
+    border-color:#4d90fe;
+}
+
+input[type="submit"] {
+    border-radius: 2px;
+    background: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    color: #757575;
+    cursor: default;
+    font-size: 17px;
+    font-weight: bold;
+    width: 100px;
+    padding: 0 16px;
+    height:36px;
+}
+input[type="submit"]:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+}
+	/*.saturn {
+    
+    
+    
+    position: absolute;
+    left:90000000px;
+    top: 100%;
+
+    -webkit-animation: myOrbit 4s linear infinite; 
+       -moz-animation: myOrbit 4s linear infinite; 
+         -o-animation: myOrbit 4s linear infinite;
+            animation: myOrbit 4s linear infinite; 
+    
+    
+    
+}
+
+
+@-webkit-keyframes myOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(300px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(300px) rotate(-360deg); }
+}
+
+@-moz-keyframes myOrbit {
+    from { -moz-transform: rotate(0deg) translateX(300px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(300) rotate(-360deg); }
+}
+
+@-o-keyframes myOrbit {
+    from { -o-transform: rotate(0deg) translateX(300px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(300px) rotate(-360deg); }
+}
+
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(300px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(300px) rotate(-360deg); }
+}*/
+.threed{
+	width:50px;
+	transform-origin:50% 100%;
+    -moz-transform-origin:50% 100%;
+    animation: appear 1s 1;
+    animation-timing-function: cubic-bezier(.63,.09,.3,1.43);
+    animation-fill-mode:forwards;
+    transform:scale(0);
+    animation-delay: 5s;
+}
+
+@keyframes appear {
+    0%   {transform:scaleX(0) scaleY(0) translateY(0)}
+    70%  {transform:scaleX(0.7) scaleY(0.7) translateY(0)}
+    80%  {transform:scaleX(0.9) scaleY(0.5) translateY(5px)}
+    100% {transform:scaleX(1) scaleY(1) translateY(0)}
+}

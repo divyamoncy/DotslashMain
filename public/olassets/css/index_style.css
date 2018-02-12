@@ -1,0 +1,254 @@
+body {
+			background-color: #303030;
+			margin: 0px;
+		}
+		@keyframes slashTrans {
+			0% {
+				transform: rotate(0deg);
+				transform: scale(2.5, 5.1);
+				fill: white;
+				stroke: black;
+			}
+			25% {
+				transform: rotate(-30deg);
+				transform: scale(3.1, 3.1);
+				/*stroke-width:3px;
+    			/*fill:#303030;*/
+				fill: white;
+			}
+			50% {
+				transform: rotate(-40deg);
+				fill: white;
+			}
+			100% {
+				transform: rotate(-50deg);
+				height: 1vw;
+				fill: #303030;
+				stroke: #303030;
+				width: 13%;
+			}
+			75% {
+				stroke-width: 0.03vh;
+			}
+			100% {
+				transform: rotate(-55deg);
+				height: 1vw;
+				fill: #303030;
+				stroke-width: 0.59vh;
+				width: 15%;
+			}
+		}
+		/* The element to apply the animation to */
+
+		.slash {
+			/*slashinte style*/
+			width: 25%;
+			height: 2vh;
+			transform: scale(2.2, 4);
+			x: 11%;
+			y: 12%;
+			background-color: white;
+			fill: white;
+			stroke: black;
+			stroke-width: 0.03vh;
+		}
+		.slashAnim {
+			x: 43%;
+			y: 50%;
+			animation: slashTrans 4s 1;
+			transform-origin: 50% 51%;
+			animation-fill-mode: forwards;
+		}
+		.dotAnim {/*need to animate over css for mozilla*/}
+		.bitcoin {
+			/*large bitcoin*/
+			transform: translate3d(70vw, 20px, 0px);
+			position: absolute;
+			width: 20vh;
+			height: 20vw;
+			animation: fly 3s ease-in-out;
+			animation-fill-mode: forwards;
+		}
+		.bitcoin2 {
+			position: absolute;
+			width: 10vh;
+			height: 10vw;
+			left: 10vw;
+			top: 20vh;
+			animation: fly 3.5s ease-in-out;
+			animation-fill-mode: forwards;
+		}
+		.ar {
+			/*Augmented Reality vector*/
+			transform: translate3d(70vw, 60vh, 0px);
+			position: absolute;
+			width: 20vw;
+			/*height: 25vh;*/
+			animation: fly 3.7s ease-in-out;
+			animation-fill-mode: forwards;
+		}
+		.twitter {
+			/*twitter vector*/
+			transform: translate3d(25vw, 55vh, 0px);
+			position: absolute;
+			width: 15vh;
+			height: 15vw;
+			animation: fly 3.5s ease-in-out;
+			animation-fill-mode: forwards;
+		}
+		.gassist {
+			/*Googel assistant*/
+			transform: translate3d(30vw, 5vh, 0px);
+			position: absolute;
+			overflow: hidden;
+			height: 15vw;
+			animation: fly 3s ease-in-out;
+			animation-fill-mode: forwards;
+			image-rendering: auto;
+		}
+		.vr {
+			/*Virtual Reality vector*/
+			transform: translate3d(9vw, 77vh, 0px);
+			position: absolute;
+			overflow: hidden;
+			height: 20vh;
+			animation: fly 2.5s ease-in-out;
+			animation-fill-mode: forwards;
+			image-rendering: auto;
+		}
+		.printer {
+			/*3d printer*/
+			transform: translate3d(49vw, 84vh, 0px);
+			position: absolute;
+			overflow: hidden;
+			height: 10vh;
+			animation: fly 4.2s ease-in-out;
+			*/ animation-fill-mode: forwards;
+			image-rendering: auto;
+		}
+		.particles {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+		}
+		@keyframes fly {
+			/*Animation for each of the pop ups*/
+			0% {
+				opacity: 0;
+			}
+			20% {
+				opacity: 0;
+			}
+			95% {
+				opacity: 0;
+			}
+			100% {
+				/*transform: translate3d(70vw, 20px, 0px);*/
+				 opacity: 1;
+			}
+		}
+		@keyframes fadeRemove {
+			/*fadeout Animation */
+			0%, 75% {
+				opacity: 1;
+			}
+			100% {
+				opacity: 0;
+				visibility: hidden;
+			}
+		}
+
+		/*Cursor of the search bar*/
+		.typed-cursor {
+			opacity: 1;
+			animation: blink .7s infinite;
+		}
+		/*Cursor animation*/
+		@keyframes blink {
+			0% {
+				opacity: 1;
+			}
+			50% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+
+		/*search bar text*/
+
+		#sbText {
+			position: absolute;
+			font-size: 2.5vw;
+			/*40px;*/
+			left: 40%;
+			top: 49%;
+			font-family: sans-serif;
+		}
+		/*search bar button style*/
+
+		#btnGo {
+			border-radius: 2px;
+			background: #f2f2f2;
+			border: 1px solid #f2f2f2;
+			color: #757575;
+			font-size: 17px;
+			font-weight: bold;
+			width: 100px;
+			padding: 0 16px;
+			height: 36px;
+			position: absolute;
+			top: 60%;
+			left: 47%
+		}
+		#btnGo:hover {
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+			background: #f8f8f8;
+			border: 1px solid #c6c6c6;
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+			color: #222;
+		}
+
+
+		/*dotslash title*/
+
+		#title {
+			position: absolute;
+			width: 100%;
+			opacity: 1;
+			/*visibility: hidden;*/
+			font-family: 'Roboto Mono', monospace;
+			top: 70%;
+			color: white;
+		}
+		#title h1 {
+			font-weight: 300;
+			text-align: center;
+		}
+		#title h2 {
+			font-weight: 300;
+			text-align: center;
+			opacity: 0;
+		}
+		/*line numbers*/
+
+		.line-numbers {
+			z-index: 100;
+			position: absolute;
+			left: 8px;
+			top: 16px;
+			width: 16px;
+			height: 100%;
+			background-image: url(../public/numbers.png);
+			background-repeat: no-repeat;
+		}
+		/*#svg1{
+			box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+		}*/
+
+		@media screen and (max-width: 480px) {
+			.bitcoin {
+				transform: translate3d(60vw, 10vh, 0px);
+			}
+		}
