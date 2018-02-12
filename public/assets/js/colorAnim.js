@@ -1,7 +1,7 @@
 var getTag = document.getElementById('greeting');
 
 function getTxt(){
-  var greetings = ['Hello folks!', 'Well hello!', 'Oh, hi there!', 'Greetings!', 'Welcome!', 'Yay CSS3'];
+  var greetings = ['Hello folks!', 'Well hello!', 'Oh, hi there!', 'Greetings!', 'Welcome!', 'Yay CS'];
   var chooseOne = Math.floor(Math.random() * greetings.length);
   var breakDown = greetings[chooseOne].split('');
   for(i=0; i<breakDown.length; i++){
@@ -22,7 +22,7 @@ function randomColor(){
   var colorCount = getTag.children.length;
   
   for(k=0; k<browserPrefix.length; k++){
-    var tagParts1 = ['#greeting span{', '-'+browserPrefix[k]+'-animation-duration:1s;-'+browserPrefix[k]+'-animation-timing-function:ease;-'+browserPrefix[k]+'-animation-iteration-count:infinite;', '}'];
+    var tagParts1 = ['#greeting span{', '-'+browserPrefix[k]+'-animation-duration:2s;-'+browserPrefix[k]+'-animation-timing-function:ease;-'+browserPrefix[k]+'-animation-iteration-count:infinite;', '}'];
     var partsTogether1;
     if(k == 0){
       partsTogether1 = tagParts1[0]+''+tagParts1[1];
