@@ -140,5 +140,8 @@ a {
 	.codrops-icon span {
 		display: none;
 	}
+	h1{
+		font-size: 1.5em;
+	}
 
 }

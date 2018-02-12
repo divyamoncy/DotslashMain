@@ -258,6 +258,12 @@ overflow-y:hidden;
   transform: scale(1);
   opacity: 1;
 }
+#collapser{
+  border-width: 0px;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+  background-color: transparent;
+}
 
 
 
@@ -322,6 +328,4 @@ overflow-y:hidden;
    .item-desc img{
     	height:250px;
     }
-  
-  
 }
