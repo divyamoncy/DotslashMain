@@ -294,8 +294,58 @@ section{
 
 
 
+@media screen and (max-width: 32em) {
+  body { font-size: 75%; }
+}
 
 
+
+/*THEEERN MODAL CODE*/
+
+
+
+
+@media (max-width: 1550px) {
+  
+  .col-wrapper {
+    width: 33%;
+  }
+ 
+  .col-1, .col-2 {
+    width: 100%;
+    display: block;
+  }
+  .item-desc img{
+    	height:300px;
+    }
+  
+}
+
+@media (max-width:1024px) {
+  
+  body {
+    font-size: 22px;
+  }
+  
+  .col-wrapper {
+    width:75%;
+  }
+  .item-desc img{
+    	height:300px;
+    }
+  
+}
+
+@media (max-width: 675px) {
+  
+  .col-wrapper {
+    width: 72%;
+  }
+   .item-desc img{
+    	height:250px;
+    }
+  
+}
 
 @media (max-width: 525px) {
   
@@ -319,13 +369,11 @@ section{
     .footerdesc{
       margin-top: 30px;
     }
-  }
   
-.prize{
-  text-align: center;
-  color:rgb(155,195,75);
-
+  
 }
+
+
 
 
 
@@ -334,7 +382,7 @@ section{
 .box {
   margin-top: 5vh;
   width: 100%;
-  height: 350px;
+  height: 300px;
   border-radius: 6px;
   box-shadow: 0 2px 30px rgba(black, .2);
   background: lighten(#f0f4c3, 10%);
@@ -406,111 +454,4 @@ section{
 @keyframes drift {
   from { transform: rotate(0deg); }
   from { transform: rotate(360deg); }
-}
-
-h2{
-  font-size: 28px;
-}
-
-
-
-
-#greeting{
-  font-size: 75px;text-align: center;
-}
-
-
-
-
-
-
-@media screen and (max-width: 32em) {
-  body { font-size: 75%; }
-}
-
-
-
-
-#t-rex{
-  height: 350px;left: 5vw;
-}
-
-/*THEEERN MODAL CODE*/
-
-
-
-
-@media (max-width: 1550px) {
-  
-  .col-wrapper {
-    width: 33%;
-  }
- 
-  .col-1, .col-2 {
-    width: 100%;
-    display: block;
-  }
-  .item-desc img{
-      height:300px;
-    }
-  
-}
-
-@media (max-width:1024px) {
-  
-  body {
-    font-size: 22px;
-  }
-  
-  .col-wrapper {
-    width:75%;
-  }
-  .item-desc img{
-      height:300px;
-    }
-  
-}
-
-@media (max-width: 675px) {
-  
-  .col-wrapper {
-    width: 72%;
-  }
-   .item-desc img{
-      height:250px;
-    }
-  
-}
-
-@media (max-width: 525px) {
-  
-  .col-wrapper {
-    width: 90%;
-  }
-   .item-desc img{
-      height:250px;
-    }
-
-  #greeting{
-    font-size: 45px;
-  }
-
-  .dateText{
-    font-size: 26px;
-  }
-
-  h1{
-    font-size: 27px;
-  }
-
-  h2{
-    font-size: 15px;
-  }
-
-  #t-rex{
-   left: -9vw;
-  }
-
-  
-  
 }
