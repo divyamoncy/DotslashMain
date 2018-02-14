@@ -1,0 +1,124 @@
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113954601-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-113954601-1');
+</script>
+
+	<meta charset="UTF-8" />
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="description" content="Technical fest of Computer Science Department, College of Engineering, Trivandrum" />
+	<title>Dotslash '18</title>
+
+
+	<meta name="keywords" content="Dotslash,Dotslash '18,CET,CS Department,Computer Science Department" />
+	<link rel="shortcut icon" href="ds.png">
+	<link rel="stylesheet" href="olassets/css/animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel="stylesheet">
+	<link rel="stylesheet" href="olassets/css/index_style.css">
+	<link rel="stylesheet" href="olassets/css/responsive.css">
+
+  <style>
+    html, body {
+  height: 100%;
+}
+
+html {
+  background: #eee;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 0 2px 30px rgba(black, .2);
+  background: lighten(#f0f4c3, 10%);
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave {
+  opacity: .99;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  background: #0af;
+  width: 500px;
+  height: 500px;
+  margin-left: -250px;
+  margin-top: -250px;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  animation: drift 3000ms infinite linear;
+}
+
+.wave.-three {
+  animation: drift 5000ms infinite linear;
+  background-color: #232222;
+}
+
+.wave.-two {
+  animation: drift 7000ms infinite linear;
+  opacity: .8;
+  background: #84ef35;
+}
+
+.box:after {
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));
+  z-index: 11;
+  transform: translate3d(0, 0, 0);
+}
+
+.title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  line-height: 300px;
+  text-align: center;
+  transform: translate3d(0, 0, 0);
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: .4em;
+  font-size: 24px;
+  text-shadow: 0 1px 0 rgba(black, .1);
+  text-indent: .3em;
+}
+@keyframes drift {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
+  </style>
+</head>
+
+<body>
+<div class='box' style="background-color: rgb(28, 28, 27);">
+  <div class='wave -one' style="background-color: rgb(236,65,118);"></div>
+  <div class='wave -two'></div>
+  <div class='wave -three'></div>
+  <div class='title'>Bitcoin job</div>
+</div>
+
+</body>
+</html>
