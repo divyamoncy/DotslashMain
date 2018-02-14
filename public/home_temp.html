@@ -12,7 +12,7 @@
 	<meta name="theme-color" content="#000000" />
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
  <!--  <script src="assets/js/modernizr.custom.js"></script> -->
 
@@ -20,6 +20,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
 <link rel="stylesheet" type="text/css" href="assets/css/demo.css" />
 <link rel="stylesheet" type="text/css" href="assets/css/component1.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <script src="assets/js/modernizr-2.6.2.min.js"></script>
 <style type="text/css">
       body{
@@ -74,10 +75,10 @@
 <div id="container">
   <header>
         <div style="margin-top: 300px;margin-bottom: 150px;">
-          <p id="greeting" style="font-size: 75px;text-align: center;"></p>
+          <p id="greeting" ></p>
         <h1 style="text-align: center;font-size: 50px;"><span ></span></h1>  
         
-        <h1 style="text-align: center;" class="spGreen"></br>/* 24, 25 Feb 2018 */ </br><span style="color:#cd0000;">!important</span> </h1>
+        <h1 style="text-align: center;" class="spGreen dateText"></br>/* 24, 25 Feb 2018 */ </br><span style="color:#cd0000;">!important</span> </h1>
       </div>
         
 
@@ -89,7 +90,7 @@
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header" style="padding: 10px;margin-left: 5vw;">
-        <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" id="collapser" type="button">navbar/></button> <a class="navbar-brand" href="#" rel="home" style="padding: unset;"><img alt="Logo Image" src="assets/img/logo.png" style="display:block;height: 45px;padding-top: 5px;"></a>
+        <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" id="collapser" style="border: 0px;background-color: unset;padding:unset;" type="button">navbar/></button> <a class="navbar-brand" href="#" rel="home" style="padding: unset;"><img alt="Logo Image" src="assets/img/logo.png" style="display:block;height: 45px;padding-top: 5px;"></a>
       </div><!-- Collect the nav links, forms, and other content for toggling -->
       <div class="menu collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="border-color: black; max-height: unset; height: 1px;">
         <ul class="nav navbar-nav navbar-right">
@@ -102,8 +103,8 @@
   </nav>
  
   <div class="row">
-    <div class="col-md-4 col-xs-4">
-      <img src="assets/img/t-rex_m.png" style="height: 350px;left: 5vw;">
+    <div class="col-md-4 ">
+      <img src="assets/img/t-rex_m.png" id="t-rex">
     </div>
 
     <div class="col-md-8 col-xs-8">
@@ -342,84 +343,101 @@
   </div> -->
 
   <div class="row" style="margin:auto">
-    <div class="col-md-3">
+    <h1 style="text-align: center;"><span class="spMagenta">< Events ></span></h1>
+    <div class="col-md-3 col-sm-3">
       <div class='box' style="background-color: rgb(28, 28, 27);">
   <div class='wave -one' style="background-color: rgb(236,65,118);"></div>
   <div class='wave -two'></div>
   <div class='wave -three'></div>
-  <div class='title'>Bitcoin job</div>
+  <img src="assets/img/iconbitcoin.png" style="height: 250px;margin: auto;display: inherit;padding-top: 30px;">
+  <p style="text-align: center;margin-top: 18px;">< Bitcoin_challenge ></p>
+  <p class="prize">$prize:20k</p>
 </div>
 
     </div>
 
-<div class="col-md-3">
+<div class="col-md-3 col-sm-3">
       <div class='box' style="background-color: rgb(28, 28, 27);">
   <div class='wave -one' style="background-color: rgb(236,65,118);"></div>
   <div class='wave -two'></div>
   <div class='wave -three'></div>
-  <div class='title'>Bitcoin job</div>
+   <img src="assets/img/iconwomencoding.png" style="height: 250px;margin: auto;display: inherit;padding-bottom: 40px;padding-top: 30px;">
+  <p style="text-align: center;margin-top: 18px;">< Women_coder ></p>
+  <p class="prize">$prize:20k</p>
 </div>
 
     </div>
 
-<div class="col-md-3">
+<div class="col-md-3 col-sm-3">
       <div class='box' style="background-color: rgb(28, 28, 27);">
   <div class='wave -one' style="background-color: rgb(236,65,118);"></div>
   <div class='wave -two'></div>
   <div class='wave -three'></div>
-  <div class='title'>Bitcoin job</div>
+  <img src="assets/img/iconcoding.png" style="height: 250px;margin: auto;display: inherit;padding-bottom: 20px;padding-top: 30px;">
+  <p style="text-align: center;margin-top: 18px;">< code_wars ></p>
+  <p class="prize">$prize:11k</p>
 </div>
 
     </div>
 
-<div class="col-md-3">
+<div class="col-md-3 col-sm-3">
       <div class='box' style="background-color: rgb(28, 28, 27);">
   <div class='wave -one' style="background-color: rgb(236,65,118);"></div>
   <div class='wave -two'></div>
   <div class='wave -three'></div>
-  <div class='title'>Bitcoin job</div>
+  <img src="assets/img/icondebugging.png" style="height: 250px;margin: auto;display: inherit;padding-bottom: 20px;padding-top: 30px;">
+  <p style="text-align: center;margin-top: 18px;">< Debugger ></p>
+  <p class="prize">$prize:8k</p>
 </div>
 
     </div>
 
 
 
-    <div class="col-md-3">
+  <div class="col-md-3 col-sm-3">
       <div class='box' style="background-color: rgb(28, 28, 27);">
   <div class='wave -one' style="background-color: rgb(236,65,118);"></div>
   <div class='wave -two'></div>
   <div class='wave -three'></div>
-  <div class='title'>Bitcoin job</div>
+  <img src="assets/img/iconquiz.png" style="height: 250px;margin: auto;display: inherit;padding-bottom: 20px;padding-top: 30px;">
+  <p style="text-align: center;margin-top: 18px;">< ./Quiz ></p>
+  <p class="prize">$prize:20k</p>
 </div>
 
     </div>
 
-<div class="col-md-3">
+<div class="col-md-3 col-sm-3">
       <div class='box' style="background-color: rgb(28, 28, 27);">
   <div class='wave -one' style="background-color: rgb(236,65,118);"></div>
   <div class='wave -two'></div>
   <div class='wave -three'></div>
-  <div class='title'>Bitcoin job</div>
+  <img src="assets/img/icongaming.png" style="height: 250px;margin: auto;display: inherit;padding-bottom: 20px;padding-top: 30px;">
+  <p style="text-align: center;margin-top: 18px;">< Gaming ></p>
+  <p class="prize">$prize:13k</p>
 </div>
 
     </div>
 
-<div class="col-md-3">
+<div class="col-md-3 col-sm-3">
       <div class='box' style="background-color: rgb(28, 28, 27);">
   <div class='wave -one' style="background-color: rgb(236,65,118);"></div>
   <div class='wave -two'></div>
   <div class='wave -three'></div>
-  <div class='title'>Bitcoin job</div>
+  <img src="assets/img/iconreversecoding.png" style="height: 250px;margin: auto;display: inherit;padding-bottom: 20px;padding-top: 30px;">
+  <p style="text-align: center;margin-top: 18px;">< reverse_coding ></p>
+  <p class="prize">$prize:8k</p>
 </div>
 
     </div>
 
-<div class="col-md-3">
+<div class="col-md-3 col-sm-3">
       <div class='box' style="background-color: rgb(28, 28, 27);">
   <div class='wave -one' style="background-color: rgb(236,65,118);"></div>
   <div class='wave -two'></div>
   <div class='wave -three'></div>
-  <div class='title'>Bitcoin job</div>
+  <img src="assets/img/icon obscura.png" style="height: 250px;margin: auto;display: inherit;padding-bottom: 20px;padding-top: 30px;">
+  <p style="text-align: center;margin-top: 18px;">< Obscura ></p>
+  <p class="prize">$prize:6k</p>
 </div>
 
     </div>
