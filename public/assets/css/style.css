@@ -359,16 +359,16 @@ overflow-y:hidden;
   margin-top: -250px;
   transform-origin: 50% 48%;
   border-radius: 43%;
-  animation: drift 3000ms infinite linear;
+  animation: drift 5000ms infinite linear;
 }
 
 .wave.-three {
-  animation: drift 5000ms infinite linear;
+  animation: drift 7000ms infinite linear;
   background-color: #232222;
 }
 
 .wave.-two {
-  animation: drift 7000ms infinite linear;
+  animation: drift 9000ms infinite linear;
   opacity: .8;
   background: #84ef35;
 }
