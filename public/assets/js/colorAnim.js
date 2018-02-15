@@ -75,7 +75,9 @@ function randomColor(){
 randomColor();
 
 
-
+function menuToggle(){
+  document.getElementById("cn-button").click();
+}
 
 // var nan=`                                                           
                                                            
