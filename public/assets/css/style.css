@@ -431,7 +431,10 @@ h2{
   font-size: 75px;text-align: center;
 }
 
-
+.foot p{
+  padding-bottom: 20px;
+   padding-left:20px;
+}
 
 
 
