@@ -77,9 +77,12 @@ randomColor();
 
 function menuToggle(){
   console.log("called");
-  console.log(document.getElementById("cn-button"));
+  var x = document.getElementById("cn-button");
+  console.log(x);
+  x.click();
+  console.log(x.innerText);
   document.getElementById("cn-button").click();
-
+  console.log("called2");
 }
 
 var nan=`                                                           
