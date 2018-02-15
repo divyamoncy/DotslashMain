@@ -1,0 +1,144 @@
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113954601-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-113954601-1');
+</script>
+
+	<meta charset="UTF-8" />
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="description" content="Technical fest of Computer Science Department, College of Engineering, Trivandrum" />
+	<title>Dotslash '18</title>
+
+
+	<meta name="keywords" content="Dotslash,Dotslash '18,CET,CS Department,Computer Science Department" />
+	<link rel="shortcut icon" href="ds.png">
+	<link rel="stylesheet" href="olassets/css/animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel="stylesheet">
+	<link rel="stylesheet" href="olassets/css/index_style.css">
+	<link rel="stylesheet" href="olassets/css/responsive.css">
+</head>
+
+<body>
+<div class="line-numbers"></div>
+<div id="sbText"><span class="element "> </span></div>
+<input type="submit" value="Go" id="btnGo">
+<div id= "title">
+	<h1>Dotslash 2018</h1>
+	<h2 id="coming">Coming soon</h2>
+</div>
+
+
+<!-- All the vectors -->
+<img  class="animated  bitcoin" id="bitcoin" src="olassets/vectors/bitcoin.svg" alt="bitcoin" >
+<img  class="animated  bitcoin2" id="bitcoin2" src="olassets/vectors/bitcoin.svg" alt="bitcoin" >
+<img  class="animated  ar" id="ar" src="olassets/vectors/ar.svg" alt="vrgear" >
+<img  class="animated  twitter" id="twitter" src="olassets/vectors/twitter.svg" alt="twitter" >
+<img  class="animated gassist" id="gassist" src="olassets/vectors/preview2.gif" alt="gassist" >
+<img  class="animated vr" id="vr" src="olassets/vectors/vr.svg" alt="gassist" >
+<img  class="animated printer" id="printer" src="olassets/vectors/3d.svg" alt="printer" >
+
+<!-- The main canvas -->
+<svg width="100%" height="100%">
+  <circle r="100%"  id="svg_1" cy="50%" cx="50%"  fill="#fff"  >
+  <animate id="ani-circle" attributeName="r" begin="indefinite" dur="3s" repeatCount="1" from="100%" to="12%" fill="freeze" keySplines="
+			0.1 0.8 0.2 1;
+			0.1 0.8 0.2 1;
+			0.1 0.8 0.2 1;
+			0.1 0.8 0.2 1;
+			0.1 0.8 0.2 1;
+			0.1 0.8 0.2 1"
+		keyTimes="
+			0;0.22;0.33;0.55;0.66;0.88;1"
+		calcMode="spline"/>
+  </circle>
+  <rect  class="slash" opacity="1"  x="44%" y="50%" id="svg_5" height="15" width="210" />
+
+</svg>
+<!-- script for typewriter effect -->
+<script src="olassets/js/typed.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    	document.getElementById('btnGo').onclick = toggleAnimation;
+    	document.getElementById('gassist').onload = function() {
+    		gifChange()
+    	};
+
+    	function gifChange() {
+    		//gif maatan olla code
+    		setTimeout(function() {
+    			document.getElementById('gassist').style.left = "5vw";
+    			document.getElementById('gassist').style.top = "2.5vw";
+    			document.getElementById('gassist').style.height = "unset";
+    			document.getElementById('gassist').style.animation = "fadeIn 0.5s 1 ";
+    			document.getElementById("gassist").src = "olassets/vectors/glogo.png";
+    			document.getElementById('gassist').style.width = "11vw";
+    		}, 3900);
+    	}
+
+    	function toggleAnimation() {
+    		//search bar Go clickeythal sambavikanda code
+    		var style;
+    		document.getElementById('svg_5').classList.add('slashAnim');
+    		setTimeout(function() {
+    			document.getElementById("ani-circle").beginElement();
+    		}, 1000);
+    		style = document.getElementById('svg_5').style;
+    		//search bar text fade out
+    		document.getElementById('sbText').classList.add('animated');
+    		document.getElementById('sbText').classList.add('fadeOutRight');
+    		//search bar btn fade out
+    		document.getElementById('btnGo').classList.add('animated');
+    		document.getElementById('btnGo').classList.add('fadeOut');
+    		document.getElementById('btnGo').style.visibility = "hidden"
+    		//ororo elements fading out below
+    		document.getElementById('printer').style.animation = "fadeRemove 1.5s 1 forwards";
+    		document.getElementById('bitcoin2').style.animation = "fadeRemove 2s 1 forwards";
+    		document.getElementById('vr').style.animation = "fadeRemove 2.3s 1 forwards";
+    		document.getElementById('bitcoin').style.animation = "fadeRemove 2.5s 1 forwards";     //ELLAM TIMINGNTE kali aan _/\_
+    		document.getElementById('twitter').style.animation = "fadeRemove 2.8s 1 forwards";
+    		document.getElementById('gassist').style.animation = "fadeRemove 1s 1 forwards";
+    		setTimeout(function() {
+    			document.getElementById('gassist').style.visibility = "hidden"
+    		}, 1000);
+    		document.getElementById('ar').style.animation = "fadeRemove 3.2s 1 forwards";
+    		setTimeout(function() {
+    			document.getElementById('coming').style.animation = "fadeIn 2s 1 forwards";
+    		}, 3700);
+    		//
+    		if (style.webkitAnimationPlayState === 'running') {
+    			style.webkitAnimationPlayState = 'paused';
+    			document.body.className = 'paused';
+    		} else {
+    			style.webkitAnimationPlayState = 'running';
+    			document.body.className = '';
+    		}
+    	}
+</script>
+
+<script type="text/javascript">
+//Typewriter effect JS code
+var options = {
+  strings: ["<i>First</i> sentence.", "&amp; a second sentence."],
+  typeSpeed: 400,
+  showCursor: true,
+  cursorChar: '|',
+  autoInsertCss: true
+}
+
+//var typed = new Typed(".element", options);
+var typed = new Typed(".element", {
+  strings: ["This is a JavaScript library", "disruptive tech"],
+  typeSpeed:100,
+  smartBackspace: true // Default value
+});
+
+</script>
+</body>
+</html>

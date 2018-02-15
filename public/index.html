@@ -1,15 +1,6 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113954601-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-113954601-1');
-</script>
-
 	<meta charset="UTF-8" />
 	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -18,127 +9,333 @@
 
 
 	<meta name="keywords" content="Dotslash,Dotslash '18,CET,CS Department,Computer Science Department" />
+	<meta name="theme-color" content="#000000" />
 	<link rel="shortcut icon" href="ds.png">
-	<link rel="stylesheet" href="olassets/css/animate.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel="stylesheet">
-	<link rel="stylesheet" href="olassets/css/index_style.css">
-	<link rel="stylesheet" href="olassets/css/responsive.css">
-</head>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!--  <script src="assets/js/modernizr.custom.js"></script> -->
+
+
+  <link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/component1.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="assets/js/modernizr-2.6.2.min.js"></script>
+  <style type="text/css">
+  body{
+   font-family: 'Roboto Mono', monospace;  
+ }
+
+ .line-numbers{
+  z-index: 0;
+  position: absolute;
+  left: 8px;
+  top: 100px;
+  width: 16px;
+  height: 90%;
+  background-image: url(assets/img/whiten_This.png);
+  background-repeat: no-repeat;
+
+}
+
+
+.bg{
+  background-color:#321c2b;
+}
+
+.bg1{
+  background-color:#1c2332;
+}
+</style>
+</head>
 <body>
-<div class="line-numbers"></div>
-<div id="sbText"><span class="element "> </span></div>
-<input type="submit" value="Go" id="btnGo">
-<div id= "title">
-	<h1>Dotslash 2018</h1>
-	<h2 id="coming">Coming soon</h2>
+
+
+ <div class="line-numbers"></div>
+
+ <div id="container">
+  <header>
+    <div style="margin-top: 300px;margin-bottom: 150px;">
+      <p id="greeting" ></p>
+      <h1 style="text-align: center;font-size: 50px;"><span ></span></h1>  
+      <h1 style="text-align: center;" class="spGreen dateText"></br>/* 24, 25 Feb 2018 */ </br><span style="color:#cd0000;">!important</span> </h1>
+
+    </div>
+
+
+
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#232323;border:unset;">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header" style="padding: 10px;margin-left: 5vw;">
+       <button aria-expanded="false" class="navbar-toggle collapsed"  style="border: 0px;background-color: unset;padding:unset;"  onclick="menuToggle()" type="button">navbar/></button> <a class="navbar-brand" href="#" rel="home" style="padding: unset;" ><img alt="Logo Image" src="assets/img/logo.png" style="display:block;height: 45px;padding-top: 5px;" ></a>  
+      </div><!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="menu collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="border-color: black; max-height: unset; height: 1px;">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a class="at"  style="margin-top: 8px;"><span id="regSpan" style="color: white;font-size:18px;" onclick="menuToggle()">navbar /&gt;</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="row">
+    <div class="col-md-4 ">
+      <img src="assets/img/t-rex_m.png" id="t-rex">
+    </div>
+
+    <div class="col-md-8 col-xs-12  ">
+      <h2 class="spGreen" style="padding-left: 14vw;">../CET/<span style="background:#4b4b4b;">Computer_Science_Dept</span>/</h2>
+      <h2 class="spPurple" style="padding-left: 15vw;">./disruptive_tech</h2>
+      <h2 class="spMagenta" style="padding-left: 17vw;">Hello Bitcoin</h2>
+      <h2 class="spYellow" style="padding-left: 17vw;">Hello Virtual Reality</h2>
+      <h2 class="spPurple" style="padding-left: 17vw;">Hello USB-C</h2>
+      <h2 class="spGreen" style="padding-left: 17vw;">Hello Assistant</h2>
+      <h2 class="spMagenta" style="padding-left: 17vw;">Hello Something</h2>
+      <h2 class="spGreen" style="padding-left: 17vw;">...</h2>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="row" style="padding-top: 10vh;" id="ws">
+   <h1 style="text-align: center;"><span class="spGreen">/* Workshops */</span></h1>
+   <!-- <h2 style="margin-left: 5vw;"><span class="spMagenta">//lunch'll be provided</span></h2> -->
+   <div class="col-md-3  col-sm-3  " >
+    <div class="item-ws" style="height: unset;" onclick="location.href='workshop/ethical_hacking/';">
+
+     <div class="controls">
+      <div class="control control-left"></div>
+      <div class="control control-center"></div>
+      <div class="control control-right"></div>
+    </div>
+    <div class="item-desc">
+      <img style="height: unset;" src="assets/img/ethicalicon.png" class="img-responsive pull-center">
+      <p class="item-heading">Ethical Hacking</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="col-md-3  col-sm-3  ">
+  <div class="item-ws" style="height: unset;" onclick="location.href='workshop/golang/';">
+
+   <div class="controls">
+    <div class="control control-left"></div>
+    <div class="control control-center"></div>
+    <div class="control control-right"></div>
+  </div>
+  <div class="item-desc">
+    <img style="height: unset;" src="assets/img/goicon.png" class="img-responsive pull-center">
+    <p class="item-heading">Go Language</p>
+  </div>
+</div>
 </div>
 
 
-<!-- All the vectors -->
-<img  class="animated  bitcoin" id="bitcoin" src="olassets/vectors/bitcoin.svg" alt="bitcoin" >
-<img  class="animated  bitcoin2" id="bitcoin2" src="olassets/vectors/bitcoin.svg" alt="bitcoin" >
-<img  class="animated  ar" id="ar" src="olassets/vectors/ar.svg" alt="vrgear" >
-<img  class="animated  twitter" id="twitter" src="olassets/vectors/twitter.svg" alt="twitter" >
-<img  class="animated gassist" id="gassist" src="olassets/vectors/preview2.gif" alt="gassist" >
-<img  class="animated vr" id="vr" src="olassets/vectors/vr.svg" alt="gassist" >
-<img  class="animated printer" id="printer" src="olassets/vectors/3d.svg" alt="printer" >
+<div class="col-md-3  col-sm-3  ">
+  <div class="item-ws" style="height: unset;" onclick="location.href='workshop/blockchain/';">
 
-<!-- The main canvas -->
-<svg width="100%" height="100%">
-  <circle r="100%"  id="svg_1" cy="50%" cx="50%"  fill="#fff"  >
-  <animate id="ani-circle" attributeName="r" begin="indefinite" dur="3s" repeatCount="1" from="100%" to="12%" fill="freeze" keySplines="
-			0.1 0.8 0.2 1;
-			0.1 0.8 0.2 1;
-			0.1 0.8 0.2 1;
-			0.1 0.8 0.2 1;
-			0.1 0.8 0.2 1;
-			0.1 0.8 0.2 1"
-		keyTimes="
-			0;0.22;0.33;0.55;0.66;0.88;1"
-		calcMode="spline"/>
-  </circle>
-  <rect  class="slash" opacity="1"  x="44%" y="50%" id="svg_5" height="15" width="210" />
+   <div class="controls">
+    <div class="control control-left"></div>
+    <div class="control control-center"></div>
+    <div class="control control-right"></div>
+  </div>
+  <div class="item-desc">
+    <img style="height: unset;" src="assets/img/blockchainicon.png" class="img-responsive pull-center">
+    <p class="item-heading">Blockchain</p>
 
-</svg>
-<!-- script for typewriter effect -->
-<script src="olassets/js/typed.min.js" type="text/javascript"></script>
+  </div>
+</div>
+</div>
 
-<script type="text/javascript">
-    	document.getElementById('btnGo').onclick = toggleAnimation;
-    	document.getElementById('gassist').onload = function() {
-    		gifChange()
-    	};
+<div class=" col-md-3  col-sm-3   ">
+  <div class="item-ws" style="height: unset;" onclick="location.href='workshop/machine_learning/';">
 
-    	function gifChange() {
-    		//gif maatan olla code
-    		setTimeout(function() {
-    			document.getElementById('gassist').style.left = "5vw";
-    			document.getElementById('gassist').style.top = "2.5vw";
-    			document.getElementById('gassist').style.height = "unset";
-    			document.getElementById('gassist').style.animation = "fadeIn 0.5s 1 ";
-    			document.getElementById("gassist").src = "olassets/vectors/glogo.png";
-    			document.getElementById('gassist').style.width = "11vw";
-    		}, 3900);
-    	}
+   <div class="controls">
+    <div class="control control-left"></div>
+    <div class="control control-center"></div>
+    <div class="control control-right"></div>
+  </div>
+  <div class="item-desc">
+    <img style="height: unset;" src="assets/img/mlicon.png" class="img-responsive pull-center">
+    <p class="item-heading">Machine Learning</p>
 
-    	function toggleAnimation() {
-    		//search bar Go clickeythal sambavikanda code
-    		var style;
-    		document.getElementById('svg_5').classList.add('slashAnim');
-    		setTimeout(function() {
-    			document.getElementById("ani-circle").beginElement();
-    		}, 1000);
-    		style = document.getElementById('svg_5').style;
-    		//search bar text fade out
-    		document.getElementById('sbText').classList.add('animated');
-    		document.getElementById('sbText').classList.add('fadeOutRight');
-    		//search bar btn fade out
-    		document.getElementById('btnGo').classList.add('animated');
-    		document.getElementById('btnGo').classList.add('fadeOut');
-    		document.getElementById('btnGo').style.visibility = "hidden"
-    		//ororo elements fading out below
-    		document.getElementById('printer').style.animation = "fadeRemove 1.5s 1 forwards";
-    		document.getElementById('bitcoin2').style.animation = "fadeRemove 2s 1 forwards";
-    		document.getElementById('vr').style.animation = "fadeRemove 2.3s 1 forwards";
-    		document.getElementById('bitcoin').style.animation = "fadeRemove 2.5s 1 forwards";     //ELLAM TIMINGNTE kali aan _/\_
-    		document.getElementById('twitter').style.animation = "fadeRemove 2.8s 1 forwards";
-    		document.getElementById('gassist').style.animation = "fadeRemove 1s 1 forwards";
-    		setTimeout(function() {
-    			document.getElementById('gassist').style.visibility = "hidden"
-    		}, 1000);
-    		document.getElementById('ar').style.animation = "fadeRemove 3.2s 1 forwards";
-    		setTimeout(function() {
-    			document.getElementById('coming').style.animation = "fadeIn 2s 1 forwards";
-    		}, 3700);
-    		//
-    		if (style.webkitAnimationPlayState === 'running') {
-    			style.webkitAnimationPlayState = 'paused';
-    			document.body.className = 'paused';
-    		} else {
-    			style.webkitAnimationPlayState = 'running';
-    			document.body.className = '';
-    		}
-    	}
-</script>
+  </div>
+</div>
+</div>
 
-<script type="text/javascript">
-//Typewriter effect JS code
-var options = {
-  strings: ["<i>First</i> sentence.", "&amp; a second sentence."],
-  typeSpeed: 400,
-  showCursor: true,
-  cursorChar: '|',
-  autoInsertCss: true
-}
+</div>
 
-//var typed = new Typed(".element", options);
-var typed = new Typed(".element", {
-  strings: ["This is a JavaScript library", "disruptive tech"],
-  typeSpeed:100,
-  smartBackspace: true // Default value
-});
 
-</script>
+<div class="row" style="padding-top: 50px;">
+
+  <div class="col-md-6" style="padding-left: 10vw;">
+    <h2 class="spPurple" >//Events</h2>
+    <h2 class="spMagenta">Hello Bitcoin</h2>
+    <h2 class="spYellow"">Hello Virtual Reality</h2>
+    <h2 class="spPurple"">Hello USB-C</h2>
+    <h2 class="spGreen"">Hello Assistant</h2>
+    <p></p>
+  </div>
+  <div class="col-md-4">
+    <img src="assets/img/isometric.png" style="height: 350px;left: 5vw;">
+  </div>  
+
+</div>
+
+
+<div class="row" style="margin:auto" >
+  <h1 id="events" style="text-align: center;"><span class="spMagenta">< Events ></span></h1>
+  <div class="col-md-3 col-sm-3">
+    <div class='box' style="background-color: rgb(28, 28, 27);" onclick="location.href='event/bitcoin_challenge/';">
+      <div class='wave -one' style="background-color: rgb(236,65,118);"></div>
+      <div class='wave -two'></div>
+      <div class='wave -three'></div>
+      <img src="assets/img/iconbitcoin.png" style="height: 230px;margin: auto;display: inherit;padding-top: 30px;">
+      <p style="text-align: center;margin-top: 78px;">< Bitcoin_challenge ></p>
+      <p class="prize">$prize:20k</p>
+    </div>
+
+  </div>
+
+  <div class="col-md-3 col-sm-3">
+    <div class='box' style="background-color: rgb(28, 28, 27);" onclick="location.href='event/women_coder';">
+      <div class='wave -one' style="background-color: rgb(236,65,118);"></div>
+      <div class='wave -two'></div>
+      <div class='wave -three'></div>
+      <img src="assets/img/iconwomencoding.png" style="height: 230px;margin: auto;display: inherit;padding-bottom: 40px;padding-top: 30px;">
+      <p style="text-align: center;margin-top: 78px;">< Women_coder ></p>
+      <p class="prize">$prize:20k</p>
+    </div>
+
+  </div>
+
+  <div class="col-md-3 col-sm-3">
+    <div class='box' style="background-color: rgb(28, 28, 27);" onclick="location.href='event/code_wars/';">
+      <div class='wave -one' style="background-color: rgb(236,65,118);"></div>
+      <div class='wave -two'></div>
+      <div class='wave -three'></div>
+      <img src="assets/img/iconcoding.png" style="height: 230px;margin: auto;display: inherit;padding-bottom: 20px;padding-top: 30px;">
+      <p style="text-align: center;margin-top: 78px;">< code_wars ></p>
+      <p class="prize">$prize:11k</p>
+    </div>
+
+  </div>
+
+  <div class="col-md-3 col-sm-3">
+    <div class='box' style="background-color: rgb(28, 28, 27);" onclick="location.href='event/debugger/';">
+      <div class='wave -one' style="background-color: rgb(236,65,118);"></div>
+      <div class='wave -two'></div>
+      <div class='wave -three'></div>
+      <img src="assets/img/icondebugging.png" style="height: 230px;margin: auto;display: inherit;padding-bottom: 20px;padding-top: 30px;">
+      <p style="text-align: center;margin-top: 78px;">< Debugger ></p>
+      <p class="prize">$prize:8k</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="col-md-3 col-sm-3">
+    <div class='box' style="background-color: rgb(28, 28, 27);" onclick="location.href='event/quiz/';">
+      <div class='wave -one' style="background-color: rgb(236,65,118);"></div>
+      <div class='wave -two'></div>
+      <div class='wave -three'></div>
+      <img src="assets/img/iconquiz.png" style="height: 230px;margin: auto;display: inherit;padding-bottom: 20px;padding-top: 30px;">
+      <p style="text-align: center;margin-top: 78px;">< ./Quiz ></p>
+      <p class="prize">$prize:20k</p>
+    </div>
+
+  </div>
+
+  <div class="col-md-3 col-sm-3">
+    <div class='box' style="background-color: rgb(28, 28, 27);" onclick="location.href='event/gaming/';">
+      <div class='wave -one' style="background-color: rgb(236,65,118);"></div>
+      <div class='wave -two'></div>
+      <div class='wave -three'></div>
+      <img src="assets/img/icongaming.png" style="height: 230px;margin: auto;display: inherit;padding-bottom: 20px;padding-top: 30px;">
+      <p style="text-align: center;margin-top: 78px;">< Gaming ></p>
+      <p class="prize">$prize:13k</p>
+    </div>
+
+  </div>
+
+  <div class="col-md-3 col-sm-3">
+    <div class='box' style="background-color: rgb(28, 28, 27);" onclick="location.href='event/reverse_coding/';">
+      <div class='wave -one' style="background-color: rgb(236,65,118);"></div>
+      <div class='wave -two'></div>
+      <div class='wave -three'></div>
+      <img src="assets/img/iconreversecoding.png" style="height: 230px;margin: auto;display: inherit;padding-bottom: 20px;padding-top: 30px;">
+      <p style="text-align: center;margin-top: 78px;">< reverse_coding ></p>
+      <p class="prize">$prize:8k</p>
+    </div>
+
+  </div>
+
+  <div class="col-md-3 col-sm-3">
+    <div class='box' style="background-color: rgb(28, 28, 27);" onclick="location.href='event/obscura/';">
+      <div class='wave -one' style="background-color: rgb(236,65,118);"></div>
+      <div class='wave -two'></div>
+      <div class='wave -three'></div>
+      <img src="assets/img/icon obscura.png" style="height: 230px;margin: auto;display: inherit;padding-bottom: 20px;padding-top: 30px;">
+      <p style="text-align: center;margin-top: 78px;">< Obscura ></p>
+      <p class="prize">$prize:6k</p>
+    </div>
+
+  </div>
+
+
+</div>
+
+
+<div class="component">
+  <button class="cn-button" id="cn-button">+</button>
+  <div class="cn-wrapper" id="cn-wrapper">
+    <ul>
+
+      <li><a href="#"><i class="material-icons"  style="transform: rotate(70deg);">phone</i></a></li>
+      <li><a href="#ws"><i class="fa fa-laptop" ></i></a></li>
+      <li><a href="#"><i class="fa fa-home"></i></a></li>
+      <li><a href="#events"><i class="fa fa-flag-checkered"></i></a></li>
+
+      <li><a href="#"><i class="fa fa-users" style="font-size:23px;"></i></a></li>
+
+    </ul>
+  </div>
+  <div id="cn-overlay" class="cn-overlay"></div>
+  <!-- End Nav Structure -->
+</div>
+
+</div>
+
+<section class="foot" style="background-color: #232323;">
+  <div class="row" >
+    <div class="col-md-4 col-xs-12 footerlog">
+      <img src="assets/img/footerimg.png" class="fimg">
+    </div>
+    <div class="col-md-4 col-xs-12">
+      <p>/*Follow us at*/</p>
+      <a href="https://www.facebook.com/dotslashcet/"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.instagram.com/dotslash18/"><i class="fa fa-instagram"></i></a>
+      <a href="mailto:dotslash@cet.ac.in" target="_top"><i class="fa fa-envelope"></i></a>
+    </div>
+    <div class="col-md-4 col-xs-12 footerdesc"><span class="spGreen">//Department of Computer Science<br>and Engineering<br></span><span class="spMagenta">//College of Engineering<br>Trivandrum<br></span><br><span class="spPurple">//Event Convenor<br>Harinath R 8289902408</span></div>
+
+  </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/js/polyfills.js"></script>
+<script src="assets/js/demo1.js"></script>
+<script src="assets/js/colorAnim.js"></script>
+
+</div></div>
+
+
 </body>
 </html>
