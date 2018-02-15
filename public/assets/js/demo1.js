@@ -22,6 +22,7 @@
 	  	}
 	 	else{
 	    	closeNav();
+
 	  	}
 	}
 	function openNav(){

@@ -75,14 +75,22 @@ function randomColor(){
 randomColor();
 
 
-function menuToggle(){
+function menuToggle(e){
+  
+  if (!e) var e = window.event;
+    e.stopPropagation();
   console.log("called");
   var x = document.getElementById("cn-button");
-  console.log(x);
-  x.click();
-  console.log(x.innerText);
-  document.getElementById("cn-button").click();
-  console.log("called2");
+  $("#cn-button").click();
+  // console.log(x);
+  // console.log(x.click());
+  // console.log(x.innerText);
+
+  // var button = document.getElementById('cn-button'),
+  //   wrapper = document.getElementById('cn-wrapper'),
+  //   overlay = document.getElementById('cn-overlay');
+  // document.getElementById("cn-button").click();
+  console.log("called2");//so that it doesn't trigger click event on document
 }
 
 var nan=`                                                           
