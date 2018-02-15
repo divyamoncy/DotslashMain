@@ -523,7 +523,7 @@ h2{
   }
 
     .footerlog{
-      margin-bottom: 50px;
+      margin-bottom: 0px;
     }
     section{
       font-size: 14px;
@@ -534,7 +534,10 @@ h2{
       font-size:3vh;
     }
     .footerdesc{
-      margin-top: 30px;
+      margin-top: 10px;
+    }
+    .fimg{
+    	height:30vh;
     }
   
   
