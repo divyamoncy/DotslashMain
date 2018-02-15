@@ -66,7 +66,19 @@ overflow-y:hidden;
   border-radius: 6px;
   height:400px;
 }
-.item :hover {
+.item-ws {
+  width: calc(100% - 20px);
+ 
+  margin: 25px auto;
+  text-align: left;
+  background-color: #232323;
+  -webkit-box-shadow:-1px -2px 20px 0px rgb(36, 33, 36);
+  -moz-box-shadow: -1px -2px 20px 0px rgb(36, 33, 36);
+  box-shadow: -1px -2px 20px 0px rgb(36, 33, 36);
+  border-radius: 6px;
+  height:400px;
+}
+.item-ws :hover {
 	 -webkit-box-shadow:-1px -2px 20px 5px rgb(36, 33, 36);
   -moz-box-shadow: -1px -2px 20px 5px rgb(36, 33, 36);
   box-shadow: -1px -2px 20px 5px rgb(36, 33, 36);
