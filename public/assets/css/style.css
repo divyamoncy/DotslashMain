@@ -483,6 +483,22 @@ h2{
   .item-desc img{
       height:300px;
     }
+    .box{
+    	height:470px;
+    }
+    .fimg{
+    	height:18vh;margin-bottom: 50px;
+    }
+    .foot a{
+    	font-size: 3vh;
+
+    }
+    .footerdesc{
+    	margin-top: 30px;
+    }
+    .foot .row{
+    	margin: auto;
+    }
   
 }
 
