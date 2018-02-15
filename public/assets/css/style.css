@@ -309,29 +309,9 @@ section{
 
 
 
-@media (max-width: 525px) {
   
-  .col-wrapper {
-    width: 90%;
-  }
-   .item-desc img{
-    	height:250px;
-    }
-    .footerlog{
-      margin-bottom: 50px;
-    }
-    section{
-      font-size: 14px;
-    }
-   
-    .foot a{
-      
-      font-size:3vh;
-    }
-    .footerdesc{
-      margin-top: 30px;
-    }
-  }
+  
+ 
   
 .prize{
   text-align: center;
@@ -542,6 +522,20 @@ h2{
    left: -9vw;
   }
 
+    .footerlog{
+      margin-bottom: 50px;
+    }
+    section{
+      font-size: 14px;
+    }
+   
+    .foot a{
+      
+      font-size:3vh;
+    }
+    .footerdesc{
+      margin-top: 30px;
+    }
   
   
 }
