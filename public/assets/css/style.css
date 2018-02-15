@@ -297,30 +297,7 @@ section{
 
 
 
-@media (max-width: 525px) {
-  
-  .col-wrapper {
-    width: 90%;
-  }
-   .item-desc img{
-    	height:250px;
-    }
-    .footerlog{
-      margin-bottom: 50px;
-    }
-    section{
-      font-size: 14px;
-    }
-   
-    .foot a{
-      
-      font-size:3vh;
-    }
-    .footerdesc{
-      margin-top: 30px;
-    }
-  }
-  
+
 .prize{
   text-align: center;
   color:rgb(155,195,75);
@@ -411,9 +388,14 @@ section{
 h2{
   font-size: 28px;
 }
+ .box img{
+  height: 200px;
+ margin: auto;
+ display: inherit;
+ padding-bottom: 20px;
+ padding-top: 30px;
 
-
-
+}
 
 #greeting{
   font-size: 75px;text-align: center;
@@ -492,11 +474,11 @@ h2{
     }
 
   #greeting{
-    font-size: 45px;
+    font-size: 30px;
   }
 
   .dateText{
-    font-size: 26px;
+    font-size: 24px;
   }
 
   h1{
@@ -511,6 +493,25 @@ h2{
    left: -9vw;
   }
 
+  .footerlog{
+      margin-bottom: 50px;
+    }
+    section{
+      font-size: 14px;
+    }
+   
+    .foot a{
+      
+      font-size:3vh;
+    }
+    .footerdesc{
+      margin-top: 30px;
+    }
+    .box img{
+
+    }
+    .box img{
+      margin-top: 70px;
+    }
+  }
   
-  
-}
