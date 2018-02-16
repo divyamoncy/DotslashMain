@@ -448,6 +448,9 @@ h2{
   .item-desc img{
       height:300px;
     }
+    .taks{
+    	height:430px;
+    }
   
 }
 
@@ -539,6 +542,8 @@ h2{
     .fimg{
     	height:30vh;
     }
-  
+  .talks{
+  	height:420px;
+  }
   
 }
