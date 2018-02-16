@@ -68,7 +68,7 @@ overflow-y:hidden;
 }
 .item-ws {
   width: calc(100% - 20px);
- 
+ height:420px;
   margin: 25px auto;
   text-align: left;
   background-color: #232323;
@@ -76,7 +76,7 @@ overflow-y:hidden;
   -moz-box-shadow: -1px -2px 20px 0px rgb(36, 33, 36);
   box-shadow: -1px -2px 20px 0px rgb(36, 33, 36);
   border-radius: 6px;
-  height:400px;
+  
 }
 .item-ws :hover {
 	 -webkit-box-shadow:-1px -2px 20px 5px rgb(36, 33, 36);
@@ -448,7 +448,7 @@ h2{
   .item-desc img{
       height:300px;
     }
-    .taks{
+    .talks{
     	height:430px;
     }
   
@@ -464,7 +464,7 @@ h2{
     width:75%;
   }
   .item-desc img{
-      height:300px;
+      height:200px;
     }
     .box{
     	height:470px;
@@ -481,6 +481,9 @@ h2{
     }
     .foot .row{
     	margin: auto;
+    }
+    .item-ws{
+    	height:340px;
     }
   
 }
@@ -544,6 +547,9 @@ h2{
     }
   .talks{
   	height:420px;
+  }
+  .item-ws{
+  	height:380px;
   }
   
 }
