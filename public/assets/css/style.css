@@ -33,7 +33,7 @@ overflow-y:hidden;
   width: 100%;
   margin-left:auto;
   margin-right: auto;
-  
+
 }
 
 #card-container {
@@ -56,7 +56,7 @@ overflow-y:hidden;
 
 .item {
   width: calc(100% - 20px);
- 
+
   margin: 25px auto;
   text-align: left;
   background-color: #232323;
@@ -76,14 +76,16 @@ overflow-y:hidden;
   -moz-box-shadow: -1px -2px 20px 0px rgb(36, 33, 36);
   box-shadow: -1px -2px 20px 0px rgb(36, 33, 36);
   border-radius: 6px;
-  
+  cursor: pointer;
 }
 .item-ws :hover {
 	 -webkit-box-shadow:-1px -2px 20px 5px rgb(36, 33, 36);
   -moz-box-shadow: -1px -2px 20px 5px rgb(36, 33, 36);
   box-shadow: -1px -2px 20px 5px rgb(36, 33, 36);
 }
-
+.item-event {
+  cursor: pointer;
+}
 .item-desc {
   position: relative;
   padding: 25px;
@@ -102,7 +104,7 @@ overflow-y:hidden;
     	height:200px;
     	text-align: center;
     	margin: auto;
-    	
+
     }
 
 
@@ -119,7 +121,7 @@ overflow-y:hidden;
      width: 12px;
     height: 12px;
     border-radius: 100%;
-   
+
     margin: 0 5px;
     }
     .control-left{
@@ -133,7 +135,7 @@ overflow-y:hidden;
     .control-center{
     	background-color: rgb(236,65,118);
     }
-   
+
 /*Span styles*/
 
 .spGreen{
@@ -282,7 +284,7 @@ section{
   background-color: #303030;
   -webkit-box-shadow:-1px -2px 20px 0px rgb(36, 33, 36);
   -moz-box-shadow: -1px -2px 20px 0px rgb(36, 33, 36);
-  box-shadow: -1px -2px 20px 0px rgb(36, 33, 36); 
+  box-shadow: -1px -2px 20px 0px rgb(36, 33, 36);
   margin-top: 70px;
   padding-top: 50px;
   padding: 50px;
@@ -309,10 +311,10 @@ section{
 
 
 
-  
-  
- 
-  
+
+
+
+
 .prize{
   text-align: center;
   color:rgb(155,195,75);
@@ -436,11 +438,11 @@ h2{
 
 
 @media (max-width: 1550px) {
-  
+
   .col-wrapper {
     width: 33%;
   }
- 
+
   .col-1, .col-2 {
     width: 100%;
     display: block;
@@ -450,16 +452,18 @@ h2{
     }
     .talks{
     	height:430px;
+      cursor: pointer;
+      padding-top: 25px;
     }
-  
+
 }
 
 @media (max-width:1024px) {
-  
+
   body {
     font-size: 22px;
   }
-  
+
   .col-wrapper {
     width:75%;
   }
@@ -485,22 +489,22 @@ h2{
     .item-ws{
     	height:340px;
     }
-  
+
 }
 
 @media (max-width: 675px) {
-  
+
   .col-wrapper {
     width: 72%;
   }
    .item-desc img{
       height:250px;
     }
-  
+
 }
 
 @media (max-width: 525px) {
-  
+
   .col-wrapper {
     width: 90%;
   }
@@ -534,9 +538,9 @@ h2{
     section{
       font-size: 14px;
     }
-   
+
     .foot a{
-      
+
       font-size:3vh;
     }
     .footerdesc{
@@ -547,9 +551,11 @@ h2{
     }
   .talks{
   	height:420px;
+    cursor: pointer;
+    padding-top: 15px;
   }
   .item-ws{
   	height:380px;
   }
-  
+
 }
